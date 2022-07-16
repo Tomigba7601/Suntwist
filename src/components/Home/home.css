@@ -1,0 +1,14 @@
+body {
+  background-color: lightgrey;
+}
+.container {
+    overflow-x: auto;
+    white-space: nowrap;
+}
+
+.container::-webkit-scrollbar {
+    display: none;
+}
+.group{
+    width: 17 0px;
+}

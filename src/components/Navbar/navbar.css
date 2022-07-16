@@ -1,0 +1,16 @@
+#navbarSupportedContent {
+  margin-left: 15%;
+}
+nav {
+  font-family: "Kurale", serif;
+  font-family: "Spline Sans Mono", monospace;
+}
+p{
+  color: white;
+  margin:0px 10px 10px 0px ;
+
+}
+.navbar-brand{
+  color: white;
+  /* color:#09117c; */
+}

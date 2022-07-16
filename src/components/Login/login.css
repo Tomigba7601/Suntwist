@@ -1,0 +1,24 @@
+.login_div {
+    position: absolute;
+    width: 450px;
+    height:450px;
+	font-family: "Kurale", serif;
+	font-family: "Spline Sans Mono", monospace;
+    top: 50%;
+    left: 50%;
+    margin-top: -220px;
+    margin-left: -200px;
+}
+.error{
+    font-size:12px;
+}
+.login_form {
+    width:450px;
+    height:450px;
+	font-family: "Kurale", serif;
+	font-family: "Spline Sans Mono", monospace;
+    background:white;
+    border-radius: 10px;
+    margin: 0;
+    padding: 0;
+}
