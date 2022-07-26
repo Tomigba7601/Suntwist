@@ -7,78 +7,42 @@ import {
   CDBSidebarMenu,
   CDBSidebarMenuItem,
 } from "cdbreact";
+import "../Sidebar/sidebar.css";
 import { NavLink } from "react-router-dom";
 
 const Sidebar = () => {
   return (
     <div
       className="shadow"
-      style={{ display: "flex", height: "120vh", overflow: "scroll initial" }}
+      style={{ display: "flex", height: "600vh", overflow: "scroll initial" , zIndex:"101"}}
     >
-      <CDBSidebar textColor="#000332" backgroundColor="lightgrey">
-        {/* <CDBSidebarHeader prefix={<i className="fa fa-bars fa-large"></i>}>
-          <a href="/" className="text-decoration-none" style={{ color: 'inherit' }}>
-            Sidebar
+      <CDBSidebar textColor="#66A500" backgroundColor="lightgrey">
+        <CDBSidebarHeader prefix={<i className="fa fa-bars fa-large"></i>}>
+          <a href="/" className="fw-bold text-decoration-none" style={{ color: 'inherit', fontWeight:"900" }}>
+           SUPERMARKET
           </a>
-        </CDBSidebarHeader> */}
+        </CDBSidebarHeader>
 
         <CDBSidebarContent className="sidebar-content">
           <CDBSidebarMenu>
             <NavLink exact to="/" activeClassName="activeClicked">
               <CDBSidebarMenuItem icon="columns" className="fw-bold">
-                Dashboard
+                Vegetables
               </CDBSidebarMenuItem>
             </NavLink>
             <NavLink exact to="/tables" activeClassName="activeClicked">
               <CDBSidebarMenuItem icon="table" className="fw-bold">
-                Tables
+                Fresh Fruits
               </CDBSidebarMenuItem>
             </NavLink>
             <NavLink exact to="/profile" activeClassName="activeClicked">
               <CDBSidebarMenuItem icon="user" className="fw-bold">
-                Profile page
+                Fish & Meats
               </CDBSidebarMenuItem>
             </NavLink>
             <NavLink exact to="/analytics" activeClassName="activeClicked">
               <CDBSidebarMenuItem icon="chart-line" className="fw-bold">
-                Analytics
-              </CDBSidebarMenuItem>
-            </NavLink>
-
-            <NavLink
-              exact
-              to="/hero404"
-              target="_blank"
-              activeClassName="activeClicked"
-            >
-              <CDBSidebarMenuItem icon="exclamation-circle" className="fw-bold">
-                404 page
-              </CDBSidebarMenuItem>
-            </NavLink>
-            <NavLink exact to="/profile" activeClassName="activeClicked">
-              <CDBSidebarMenuItem icon="user" className="fw-bold">
-                Profile page
-              </CDBSidebarMenuItem>
-            </NavLink>
-            <NavLink exact to="/analytics" activeClassName="activeClicked">
-              <CDBSidebarMenuItem icon="chart-line" className="fw-bold">
-                Analytics
-              </CDBSidebarMenuItem>
-            </NavLink>
-
-            <NavLink
-              exact
-              to="/hero404"
-              target="_blank"
-              activeClassName="activeClicked"
-            >
-              <CDBSidebarMenuItem icon="exclamation-circle" className="fw-bold">
-                404 page
-              </CDBSidebarMenuItem>
-            </NavLink>
-            <NavLink exact to="/profile" activeClassName="activeClicked">
-              <CDBSidebarMenuItem icon="user" className="fw-bold">
-                Profile page
+                Wheat
               </CDBSidebarMenuItem>
             </NavLink>
           </CDBSidebarMenu>
@@ -89,9 +53,7 @@ const Sidebar = () => {
             style={{
               padding: "20px 5px",
             }}
-          >
-            
-          </div>
+          ></div>
         </CDBSidebarFooter>
       </CDBSidebar>
     </div>

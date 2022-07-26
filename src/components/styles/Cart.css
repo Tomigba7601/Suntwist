@@ -1,0 +1,73 @@
+.cartHeading{
+
+    height: 8vh;    
+}
+.cartItem{
+    /* box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 12px; */
+     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.imgSection{
+    border: thin solid green;
+    border-radius: 20px;
+    height: 90px;
+    width: 90px;
+
+}
+.itemImg{
+    height: auto;
+    width: auto;
+    
+}
+.totalPrice{
+    font-weight: 600;
+    color: black;
+    font-size: 18px;
+}
+.checkOutBtn{
+    background-color: #66A500 ;
+    width: 80%;
+    height: 40px;
+    color: white;
+    font-weight: 500;
+}
+.checkOutBtn:hover{
+    background-color: black;
+  }
+ .summarySection{
+     height: 27vh;
+ }
+ .productName {
+     word-break: break-all;
+     
+ }
+ .minusBtn{
+    background-color: #66A500;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    color: white;
+    font-weight: 600;
+    width:4vh;
+    height: auto;
+    margin: -30px 0px;
+
+ }
+ .actionBtn{
+     background-color: #66A500;
+     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+     color: white;
+     font-weight: 600;
+      width:4vh;
+    height: auto; 
+    margin: -30px 0px;
+
+ }
+ .deleteBtn{
+    /* background-color: #66A500; */
+    width: 15%;
+    height:40px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    
+ }  
+ .deleteBtn:hover{
+     background-color: #66A500;
+     color: white;
+ }

@@ -12,7 +12,8 @@ function carousel() {
         </CCarouselItem>
         <CCarouselItem>
           <CImage
-            className="d-block w-100 card-img-top"
+            
+            className="d-block card-img-top"
             src={ecom}
             alt="slide 2"
           />

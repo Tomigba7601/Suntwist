@@ -1,0 +1,29 @@
+.footer{
+    background-color: #E5DDCC;
+    height: auto;
+}
+.footerlogo{
+    width:60%;
+    height: 10vh;
+}
+.footerPara{
+    font-weight: 400;
+}
+.hr{
+    width: 7vh;
+    background-color:#66A500 ;
+    height: 0.4vh !important;
+}
+.sendMail{
+    background-color: black;
+    width: 50%;
+    height: 6vh;
+    color: white;
+}
+.sendMail:hover{
+    background-color: #66A500;
+}
+.shortUl:hover{
+    color:#66A500 ;
+
+}

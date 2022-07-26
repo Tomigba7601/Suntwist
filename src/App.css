@@ -19,7 +19,7 @@ body{
   height: 60px;
   background: #d5d5d5;
   border-radius: 25px 25px 0px 0px;
-  z-index: 101;
+  z-index:200;
 }
 
 .leftMenu ul {
@@ -55,7 +55,7 @@ body{
 
 .leftMenu ul li a .icon .MuiSvgIcon-root {
   font-size: 26px;
-  color: #373848;
+  color: #66A500;
 }
 
 .leftMenu ul li.active a .icon {
@@ -71,7 +71,7 @@ body{
   position: absolute;
   height: 60px;
   width: 60px;
-  background: #f8901c;
+  background: #66A500;
   top: -50%;
   border-radius: 50%;
   border: 6px solid #faf9fb;

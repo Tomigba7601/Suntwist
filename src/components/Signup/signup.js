@@ -123,8 +123,8 @@ export default class App extends React.Component {
             </div>
             <div className="submit">
               <button
-                className="btn btn-light w-100 ms-1"
-                style={{ backgroundColor: "#000332", color: "white" }}
+                className="btn btn-outline-success w-100 ms-1"
+                style={{ backgroundColor: "#66A500", color: "white" }}
               >
                 Create
               </button>
