@@ -1,1 +1,18 @@
-/*  */
+.login_div {
+  font-family: "Arimo", sans-serif;
+  font-family: "Kurale", serif;
+  font-family: "Spline Sans Mono", monospace;
+  width: 80%;
+  text-align: center;
+  margin-left:140px;
+}
+@media screen and (min-width: 0px) and (max-width: 600px) {
+    .login_div {
+        font-family: "Arimo", sans-serif;
+        font-family: "Kurale", serif;
+        font-family: "Spline Sans Mono", monospace;
+        width:100%;
+        text-align: center;
+        margin-left:0px;
+      }
+}

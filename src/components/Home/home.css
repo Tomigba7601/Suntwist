@@ -1,22 +1,12 @@
-/* .sec_1{
-  height:
-} */
-#testimony{
-  background-color:lightgrey;
-  width:102%;
+.whole_home {
+  font-family: "Arimo", sans-serif;
+  font-family: "Kurale", serif;
+  font-family: "Spline Sans Mono", monospace;
+}
+#testimony {
+  background-color: lightgrey;
+  width: 102%;
   /* height:400px; */
-  margin-bottom:60px;
+  margin-bottom: 60px;
 }
-.category_1{
-  background-color:#F2F2F2;
-}
-.category_2{
-  background-color:#FEF7CC;
-  /* height: 300px; */
-}
-.category_3{
-  background-color:#FBC6B8;
-}
-.category_4{
-  background-color:#D3E8A7;
-}
+

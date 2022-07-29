@@ -1,53 +1,108 @@
-#search_box{
-  width:50%;
-  border:none;
-  background-color:lightgrey;
-  height:40px;
-  border-radius:100px;
-  outline:none;
+#search_box {
+  width: 50%;
+  border: none;
+  background-color: lightgrey;
+  height: 40px;
+  border-radius: 100px;
+  outline: none;
 }
-#navbar{
-  height:100px;
-  background-color:white;
+#navbar {
+  height: 100px;
+  background-color: white;
 }
-.acct_butn,.cart_butn{
-  color:#66A500;
+.whole_nav {
+  font-family: "Arimo", sans-serif;
+  font-family: "Kurale", serif;
+  font-family: "Spline Sans Mono", monospace;
 }
-.acct2_butn,.cart2_butn,.collapse_butn{
-  color:white;
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
 }
-.logo_2{
-  color:white;
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
 }
-#sec_navbar{
-  height:60px;
-  background-color:#66A500;
+
+.sidenav a:hover {
+  color: #f1f1f1;
 }
-button{
-  color:#66A500;
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
 }
-#third_nav{
-  display:none;
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
 }
-li,.Category_butn{
-  list-style:none;
-  color:white;
+
+.acct_butn,
+.cart_butn {
+  color: #66a500;
+}
+.acct2_butn,
+.cart2_butn,
+.collapse_butn {
+  color: white;
+}
+.logo_2 {
+  color: white;
+}
+#sec_navbar {
+  height: 60px;
+  background-color: #66a500;
+}
+.logo {
+  font-family: "Arimo", sans-serif;
+  font-family: "Kurale", serif;
+  font-family: "Spline Sans Mono", monospace;
+  font-weight: bold;
+}
+button {
+  color: #66a500;
+}
+#third_nav {
+  display: none;
+}
+li,
+.Category_butn {
+  list-style: none;
+  color: white;
   cursor: pointer;
 }
-h1{
-  color: #66A500;
+h1 {
+  color: #66a500;
 }
-@media screen and (min-width:0px) and (max-width:600px){
-  #sec_navbar{
-    display:none;
+@media screen and (min-width: 0px) and (max-width: 600px) {
+  #sec_navbar {
+    display: none;
   }
-  #third_nav{
-    display:block;
-    height:60px;
-    background-color: #66A500;
-    width:100%;
+  #third_nav {
+    display: block;
+    height: 60px;
+    background-color: #66a500;
+    width: 100%;
   }
-  #navbar{
-    display:none;
+  #navbar {
+    display: none;
   }
 }

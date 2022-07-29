@@ -4,10 +4,14 @@ import Carousel from "../Carousel/carousel";
 import Services from "../Services";
 import Item from "../Item";
 import Card from "../Card";
+import ShoppingCartOutlinedIcon from "@mui/icons-material/ShoppingCartOutlined";
+import HeadsetMicOutlinedIcon from "@mui/icons-material/HeadsetMicOutlined";
+import LocalOfferOutlinedIcon from "@mui/icons-material/LocalOfferOutlined";
+import SentimentSatisfiedAltOutlinedIcon from "@mui/icons-material/SentimentSatisfiedAltOutlined";
 
 function home() {
   return (
-    <>
+    <div className="whole_home">
       <Carousel />{" "}
       <div className="row sec_1 justify-content-center m-5">
         <div className="col-md-4 card category_1 text-center shadow">
@@ -25,7 +29,7 @@ function home() {
           <p className="fw-bold fs-2">Garden Fresh Pure Orange</p>
           <button className="text-dark">Shop Now</button>
           <img
-            src="https://media.istockphoto.com/photos/whole-cross-section-and-quarter-of-fresh-organic-navel-orange-with-picture-id1227301369?b=1&k=20&m=1227301369&s=170667a&w=0&h=7WdK1RQTLuCn5tuNe25Z999THYzj8yijmk0MaRE-SD0="
+            src="https://media.istockphoto.com/photos/orange-isolated-on-white-background-clipping-path-full-depth-of-field-picture-id1194662606?k=20&m=1194662606&s=612x612&w=0&h=Q3bHkLexn71hPlUJQSPhazlJiL-xpeVGwOAFwO67WcU="
             alt=""
             width="200px"
             height="100px"
@@ -62,49 +66,74 @@ function home() {
       <div className="row p-3 d-flex justify-content-center" id="testimony">
         <h2 className="fw-bold text-center">Why do they love us</h2>
         <div
-          className="col-md-3 card m-2 mt-4 pt-5 h-100 text-center"
+          className="col-md-3 fw-bold card m-2 mt-4 pt-3 h-100 text-center"
           style={{ background: "#F5EDEB" }}
         >
+          <div className="d-flex justify-content-center mb-3">
+            <img
+              src="https://www.narayanahealth.org/blog/wp-content/uploads/2022/03/shutterstock_622663796.jpg"
+              style={{ width: "70px", height: "70px", borderRadius: "70px" }}
+            />
+            <p className="ms-3">Designer</p>
+          </div>
           "Blood Bank Canine Teeth Larynx Occupational Therapist Oncologist
           Optician Plaque Spinal Tap Stat Strep Optician Plaque Spinal Tap Stat
           Strep..."
         </div>
         <div
-          className="col-md-3 card m-2 mt-4 pt-5 h-75 text-center"
+          className="col-md-3 fw-bold card m-2 mt-4 pt-3 h-75 text-center"
           style={{ background: "#F5F3EB" }}
         >
+          <div className="d-flex justify-content-center mb-3">
+            <img
+              src="https://www.narayanahealth.org/blog/wp-content/uploads/2022/03/shutterstock_622663796.jpg"
+              style={{ width: "70px", height: "70px", borderRadius: "70px" }}
+            />
+            <p className="ms-3">Designer</p>
+          </div>
           "Blood Bank Canine Teeth Larynx Occupational Therapist Oncologist
           Optician Plaque Spinal Tap Stat Strep Optician Plaque Spinal Tap Stat
           Strep..."
         </div>
         <div
-          className="col-md-3 card m-2 pt-5 mt-4 h-75 text-center"
+          className="col-md-3 fw-bold card m-2 pt-3 mt-4 h-75 text-center"
           style={{ background: "#EBF4F5" }}
         >
+          <div className="d-flex justify-content-center mb-3">
+            <img
+              src="https://www.narayanahealth.org/blog/wp-content/uploads/2022/03/shutterstock_622663796.jpg"
+              style={{ width: "70px", height: "70px", borderRadius: "70px" }}
+            />
+            <p className="ms-3">Designer</p>
+          </div>
           "Blood Bank Canine Teeth Larynx Occupational Therapist Oncologist
           Optician Plaque Spinal Tap Stat Strep Optician Plaque Spinal Tap Stat
           Strep..."
         </div>
       </div>
-      <div className="row m-2 text-center">
-          <div className="col-md-3">
-            <h5 style={{color:"#66A500"}}>Free Fast Delivery</h5>
-            <p>Online Only Exclusions Apply</p>
-          </div>
-          <div className="col-md-3">
-            <h5 style={{color:"#66A500"}}>24/7 Call Support</h5>
-            <p>Contact Us 24 Hours A Day</p>
-          </div>
-          <div className="col-md-3">
-            <h5 style={{color:"#66A500"}}>Our Special Offer</h5>
-            <p>Offer Is Any Kind Of Discount</p>
-          </div>
-          <div className="col-md-3">
-            <h5 style={{color:"#66A500"}}>For Quality Product</h5>
-            <p>Sell Highest Quality Item</p>
-          </div>
+      <div className="row m-2 text-center fw-bold">
+        <div className="col-md-3">
+          <ShoppingCartOutlinedIcon className="fs-1 mb-2" />
+          <h5 style={{ color: "#66A500" }}>Free Fast Delivery</h5>
+          <p>Online Only Exclusions Apply</p>
+        </div>
+        <div className="col-md-3">
+          <HeadsetMicOutlinedIcon className="fs-1 mb-2" />
+          <h5 style={{ color: "#66A500" }}>24/7 Call Support</h5>
+          <p>Contact Us 24 Hours A Day</p>
+        </div>
+        <div className="col-md-3">
+          <LocalOfferOutlinedIcon className="fs-1 mb-2" />
+          <h5 style={{ color: "#66A500" }}>Our Special Offer</h5>
+          <p>Offer Is Any Kind Of Discount</p>
+        </div>
+        <div className="col-md-3">
+          <SentimentSatisfiedAltOutlinedIcon className="fs-1 mb-2" />
+          <h5 style={{ color: "#66A500" }}>For Quality Product</h5>
+          <p>Sell Highest Quality Item</p>
+        </div>
       </div>
-    </>
+    </div>
   );
 }
 

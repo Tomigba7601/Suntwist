@@ -1,63 +1,23 @@
+import Dropdown from "react-bootstrap/Dropdown";
 import React from "react";
-import {
-  CDBSidebar,
-  CDBSidebarContent,
-  CDBSidebarFooter,
-  CDBSidebarHeader,
-  CDBSidebarMenu,
-  CDBSidebarMenuItem,
-} from "cdbreact";
-import "../Sidebar/sidebar.css";
-import { NavLink } from "react-router-dom";
-
-const Sidebar = () => {
+import DehazeOutlinedIcon from "@mui/icons-material/DehazeOutlined";
+function Sidebar() {
   return (
-    <div
-      className="shadow"
-      style={{ display: "flex", height: "600vh", overflow: "scroll initial" , zIndex:"101"}}
-    >
-      <CDBSidebar textColor="#66A500" backgroundColor="lightgrey">
-        <CDBSidebarHeader prefix={<i className="fa fa-bars fa-large"></i>}>
-          <a href="/" className="fw-bold text-decoration-none" style={{ color: 'inherit', fontWeight:"900" }}>
-           SUPERMARKET
-          </a>
-        </CDBSidebarHeader>
+    <Dropdown>
+      <Dropdown.Toggle variant="" className="mt-2">
+        <DehazeOutlinedIcon style={{color:"white"}}/>
+      </Dropdown.Toggle>
 
-        <CDBSidebarContent className="sidebar-content">
-          <CDBSidebarMenu>
-            <NavLink exact to="/" activeClassName="activeClicked">
-              <CDBSidebarMenuItem icon="columns" className="fw-bold">
-                Vegetables
-              </CDBSidebarMenuItem>
-            </NavLink>
-            <NavLink exact to="/tables" activeClassName="activeClicked">
-              <CDBSidebarMenuItem icon="table" className="fw-bold">
-                Fresh Fruits
-              </CDBSidebarMenuItem>
-            </NavLink>
-            <NavLink exact to="/profile" activeClassName="activeClicked">
-              <CDBSidebarMenuItem icon="user" className="fw-bold">
-                Fish & Meats
-              </CDBSidebarMenuItem>
-            </NavLink>
-            <NavLink exact to="/analytics" activeClassName="activeClicked">
-              <CDBSidebarMenuItem icon="chart-line" className="fw-bold">
-                Wheat
-              </CDBSidebarMenuItem>
-            </NavLink>
-          </CDBSidebarMenu>
-        </CDBSidebarContent>
-
-        <CDBSidebarFooter style={{ textAlign: "center" }}>
-          <div
-            style={{
-              padding: "20px 5px",
-            }}
-          ></div>
-        </CDBSidebarFooter>
-      </CDBSidebar>
-    </div>
+      <Dropdown.Menu>
+        <Dropdown.Item href="#/action-1" className="fw-bold fs-3">Home</Dropdown.Item>
+        <Dropdown.Item href="#/action-2" className="fw-bold fs-3">About Us</Dropdown.Item>
+        <Dropdown.Item href="#/action-3" className="fw-bold fs-3">Shop</Dropdown.Item>
+        <Dropdown.Item href="#/action-1" className="fw-bold fs-3">Pages</Dropdown.Item>
+        <Dropdown.Item href="#/action-2" className="fw-bold fs-3">Blog</Dropdown.Item>
+        <Dropdown.Item href="#/action-3" className="fw-bold fs-3">Contact</Dropdown.Item>
+      </Dropdown.Menu>
+    </Dropdown>
   );
-};
+}
 
 export default Sidebar;

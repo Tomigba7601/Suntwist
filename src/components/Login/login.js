@@ -122,12 +122,14 @@ export default class App extends React.Component {
               )}
             </div>
             <div className="submit">
+              <Link to="/">
               <button
                 className="btn btn-outline-success w-100 ms-1"
                 style={{ backgroundColor: "#66A500", color: "white" }}
               >
                Log in
               </button>
+              </Link>
             </div>
             <div className="">
               <p className="text-dark fw-bold mt-3 text-center">

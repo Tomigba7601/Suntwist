@@ -5,8 +5,10 @@
   --color:#290f94;
 }
 body{
-  background-color:lightgrey;
   overflow-x: hidden;
+  font-family: "Arimo", sans-serif;
+  font-family: "Kurale", serif;
+  font-family: "Spline Sans Mono", monospace;
 }
 .leftMenu {
   position: fixed;

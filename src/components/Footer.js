@@ -33,7 +33,7 @@ function Footer() {
                 </div>
 
                 <div className="col-sm-12 col-md-6 col-lg-2 col-xl-2 col-xxl-2">
-                  <p className="footerPara">INFORMATION</p>
+                  <p className="footerPara fw-bold">INFORMATION</p>
                   <hr className="hr" />
                   <ul>
                     <li className="shortUl">FAQ</li>
@@ -45,7 +45,7 @@ function Footer() {
                   </ul>
                 </div>
                 <div className="col-sm-12 col-md-6 col-lg-2 col-xl-2 col-xxl-2">
-                  <p className="footerPara">MY ACCOUNT</p>
+                  <p className="footerPara fw-bold">MY ACCOUNT</p>
                   <hr className="hr" />
                   <ul>
                     <li className="shortUl">MY ACCOUNT</li>
@@ -57,7 +57,7 @@ function Footer() {
                   </ul>
                 </div>
                 <div className="col-sm-12 col-md-6 col-lg-4 col-xl-4 col-xxl-4">
-                  <p className="footerPara">NEWSLETTERS</p>
+                  <p className="footerPara fw-bold">NEWSLETTERS</p>
                   <hr className="hr" />
                   <p>Lorem ipsum dolor, sit amet consectetur adipisici</p>
 

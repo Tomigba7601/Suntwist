@@ -1,7 +1,8 @@
 import React from "react";
-import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import "../Carousel/carousel.css";
+import pic from "../images/sec_f.PNG";
+import fruit from "../images/fruit.PNG";
 
 function carousel() {
   return (
@@ -13,13 +14,13 @@ function carousel() {
   </div>
   <div class="carousel-inner">
     <div class="carousel-item active">
-      <img src="https://www.narayanahealth.org/blog/wp-content/uploads/2022/03/shutterstock_622663796.jpg" class="d-block w-100" alt="..."/>
+      <img src={pic} class="d-block w-100" alt="..."/>
     </div>
     <div class="carousel-item">
-      <img src="https://www.narayanahealth.org/blog/wp-content/uploads/2022/03/shutterstock_622663796.jpg" class="d-block w-100" alt="..."/>
+      <img src={fruit} class="d-block w-100" alt="..."/>
     </div>
     <div class="carousel-item">
-      <img src="https://www.narayanahealth.org/blog/wp-content/uploads/2022/03/shutterstock_622663796.jpg" class="d-block w-100" alt="..."/>
+      <img src={pic} class="d-block w-100" alt="..."/>
     </div>
   </div>
   <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">

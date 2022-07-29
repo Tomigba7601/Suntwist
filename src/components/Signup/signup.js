@@ -107,7 +107,7 @@ export default class App extends React.Component {
               )}
             </div>
             <div className="password m-3">
-            <TextField
+              <TextField
                 ref="password"
                 hintText="Password"
                 floatingLabelText="Password"
@@ -126,12 +126,14 @@ export default class App extends React.Component {
               )}
             </div>
             <div className="submit">
-              <button
-                className="btn btn-outline-success w-100 ms-1"
-                style={{ backgroundColor: "#66A500", color: "white" }}
-              >
-                Create
-              </button>
+              <Link to="/login">
+                <button
+                  className="btn btn-outline-success w-100 ms-1"
+                  style={{ backgroundColor: "#66A500", color: "white" }}
+                >
+                  Create
+                </button>
+              </Link>
             </div>
             <div className="">
               <p className="text-dark fw-bold mt-3 text-center">

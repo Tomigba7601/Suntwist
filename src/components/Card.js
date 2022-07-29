@@ -57,20 +57,20 @@ function Card() {
             <div className=" d-flex justify-content-center m-2">
               <img
                 src={eachProduct.image}
-                class="card-img-top "
+                class="card-img-top"
                 alt="..."
                 className="cardImg"
                 onClick={() => handleGetDetails(eachProduct)}
                 key={eachProduct.id}
               />
               <div className="allIcons">
-                <button className="cartBtn btn" onClick={() => addToCart(i)}>
+                <button className="cartBtn btn bg-light" onClick={() => addToCart(i)}>
                   <BsCart3 size="20px" />
                 </button>
-                <button className="compareBtn btn">
+                <button className="compareBtn btn bg-light">
                   <MdOutlineCompareArrows size="20px" />
                 </button>
-                <button className="wishListBtn btn ">
+                <button className="wishListBtn btn bg-light">
                   <TbJewishStar size="20px" />
                 </button>
               </div>
