@@ -51,10 +51,10 @@ function Card() {
   };
   return (
     <div>
-      <div className="allCard d-flex flex-row">
+      <div className="allCard d-flex flex-row mt-5">
         {product.map((eachProduct, i) => (
           <div class="productCard card">
-            <div className=" d-flex justify-content-center">
+            <div className=" d-flex justify-content-center m-2">
               <img
                 src={eachProduct.image}
                 class="card-img-top "

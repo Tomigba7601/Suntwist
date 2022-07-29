@@ -79,7 +79,7 @@ export default class App extends React.Component {
             <div className="fullName m-3">
               <TextField
                 id="outlined-basic"
-                label="Firstname"
+                label="Username"
                 variant="outlined"
                 name="fullName"
                 size="small"
@@ -107,7 +107,11 @@ export default class App extends React.Component {
               )}
             </div>
             <div className="password m-3">
-              <TextField
+            <TextField
+                ref="password"
+                hintText="Password"
+                floatingLabelText="Password"
+                type="password"
                 id="outlined-basic"
                 label="Password"
                 variant="outlined"

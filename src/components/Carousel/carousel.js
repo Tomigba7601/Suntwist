@@ -1,32 +1,36 @@
 import React from "react";
+import { Carousel } from "react-responsive-carousel";
+import "react-responsive-carousel/lib/styles/carousel.min.css";
 import "../Carousel/carousel.css";
-import { CCarousel, CCarouselItem, CImage } from "@coreui/react";
-import ecom from "../images/one.png.webp";
 
 function carousel() {
   return (
-    <div className="card carouse shadow">
-      <CCarousel controls transition="crossfade">
-        <CCarouselItem>
-          <CImage className="d-block card-img-top" src={ecom} alt="slide 1" />
-        </CCarouselItem>
-        <CCarouselItem>
-          <CImage
-            
-            className="d-block card-img-top"
-            src={ecom}
-            alt="slide 2"
-          />
-        </CCarouselItem>
-        <CCarouselItem>
-          <CImage
-            className="d-block w-100 card-img-top"
-            src={ecom}
-            alt="slide 3"
-          />
-        </CCarouselItem>
-      </CCarousel>
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="https://www.narayanahealth.org/blog/wp-content/uploads/2022/03/shutterstock_622663796.jpg" class="d-block w-100" alt="..."/>
     </div>
+    <div class="carousel-item">
+      <img src="https://www.narayanahealth.org/blog/wp-content/uploads/2022/03/shutterstock_622663796.jpg" class="d-block w-100" alt="..."/>
+    </div>
+    <div class="carousel-item">
+      <img src="https://www.narayanahealth.org/blog/wp-content/uploads/2022/03/shutterstock_622663796.jpg" class="d-block w-100" alt="..."/>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
   );
 }
 

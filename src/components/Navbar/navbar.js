@@ -2,136 +2,76 @@ import React from "react";
 import "../Navbar/navbar.css";
 import SearchIcon from "@mui/icons-material/Search";
 import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
-import { Link } from "react-router-dom";
+import { Router, Routes, Route, Link } from "react-router-dom";
+import PermIdentityOutlinedIcon from "@mui/icons-material/PermIdentityOutlined";
+import ShoppingCartOutlinedIcon from "@mui/icons-material/ShoppingCartOutlined";
+import SearchOutlinedIcon from "@mui/icons-material/SearchOutlined";
+import DehazeOutlinedIcon from "@mui/icons-material/DehazeOutlined";
+import LocalPhoneOutlinedIcon from "@mui/icons-material/LocalPhoneOutlined";
 
 function navbar() {
   return (
-    <nav
-      class="navbar navbar-expand-lg shadow"
-      style={{ backgroundColor: "#66A500", color: "white", zIndex: 101 }}
-    >
-      <div class="container-fluid">
-        <a class="navbar-brand fw-bold text-shadow" href="/">
-          Suntwist
-        </a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <p class="fw-bold mt-3" aria-current="page" href="#">
-                Overview
-              </p>
-            </li>
-            <li class="nav-item">
-              <p class="fw-bold mt-3" href="#">
-                Product
-              </p>
-            </li>
-            <li class="nav-item dropdown">
-              <p
-                class="mt-3 dropdown-toggle fw-bold"
-                href="#"
-                id="navbarDropdown"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
-                Sale Category
-              </p>
-              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li>
-                  <a class="dropdown-item" href="#">
-                    Action
-                  </a>
-                </li>
-                <li>
-                  <a class="dropdown-item" href="#">
-                    Another action
-                  </a>
-                </li>
-                <li>
-                  <hr class="dropdown-divider" />
-                </li>
-                <li>
-                  <a class="dropdown-item" href="#">
-                    Something else here
-                  </a>
-                </li>
-              </ul>
-            </li>
-            {/* #000332 */}
-            <li class="nav-item dropdown">
-              <p
-                class="mt-3 dropdown-toggle fw-bold"
-                href="#"
-                id="navbarDropdown"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
-                Dropdown
-              </p>
-              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li>
-                  <a class="dropdown-item" href="#">
-                    Action
-                  </a>
-                </li>
-                <li>
-                  <a class="dropdown-item" href="#">
-                    Another action
-                  </a>
-                </li>
-                <li>
-                  <hr class="dropdown-divider" />
-                </li>
-                <li>
-                  <a class="dropdown-item" href="#">
-                    Something else here
-                  </a>
-                </li>
-              </ul>
-            </li>
-          </ul>
-          <form class="d-flex" role="search">
-            <Link to="/login">
-              <button
-                className="btn btn-outline-dark fw-bold me-3 ms-5"
-                style={{ backgroundColor: "#000332", color: "white" }}
-              >
-                Login
-              </button>
-            </Link>
+    <>
+      <div className="row" id="navbar">
+        <Link to="/" className="col-md-2 mt-3 text-decoration-none">
+        <h1 >FreshVegi</h1>
+        </Link>
+        <input
+          type="search"
+          placeholder="Search"
+          id="search_box"
+          className="col-md-5 mt-4"
+        />
+        <Link to="/login" className="col-md-2 mt-4 acct_butn text-dark">
+          <button >
+            <PermIdentityOutlinedIcon className="ms-5" /> My Account
+          </button>
+        </Link>
 
-            {/* <input class="form-control me-2 w-100" type="search" placeholder="Search" aria-label="Search"/> */}
-            <button
-              class="btn btn-outline-dark"
-              type="submit"
-              style={{ backgroundColor: "#000332", color: "white" }}
-            >
-              <ShoppingCartIcon />
-            </button>
-            <button
-              class="btn btn-outline-dark ms-3 fw-bold"
-              type="submit"
-              style={{ backgroundColor: "#000332", color: "white" }}
-            >
-              <SearchIcon />
-            </button>
-          </form>
-        </div>
+        <Link to="/cart" className="col-md-2 mt-4 cart_butn text-dark">
+          <button >
+            <ShoppingCartOutlinedIcon className="ms-3"/> My Cart
+          </button>
+        </Link>
       </div>
-    </nav>
+      <div className="row" id="sec_navbar">
+        <button className="Category_butn col-md-3">All categories</button>
+        <ul className="col-md-9 mt-3 d-flex justify-content-center">
+          <li className="p-2">Home</li>
+          <li className="p-2">Blog</li>
+          <li className="p-2">Contact Us</li>
+          <li className="p-2">Brands</li>
+          <li className="p-2">Special</li>
+        </ul>
+      </div>
+      <div
+        className="d-flex justify-content-center"
+        id="third_nav"
+        style={{ display: "none" }}
+      >
+        <button className="ms-2 mb-2 fs-5 acct2_butn">
+          <DehazeOutlinedIcon />
+        </button>
+        <Link to="/" className="text-decoration-none">
+          <h1 className="mt-2 ms-3 logo_2 text-decoration-none">FreshVegi</h1>
+        </Link>
+        <Link to="/login">
+          <button>
+            <PermIdentityOutlinedIcon className="ms-4 fs-1 mt-3 acct2_butn" />
+          </button>
+        </Link>
+        <Link to="/cart">
+          <button>
+            <ShoppingCartOutlinedIcon className="ms-4 fs-1 mt-3 cart2_butn" />
+          </button>
+        </Link>
+        <Link to="/">
+          <button>
+            <LocalPhoneOutlinedIcon className="ms-4 fs-1 mt-3 cart2_butn" />
+          </button>
+        </Link>
+      </div>
+    </>
   );
 }
 

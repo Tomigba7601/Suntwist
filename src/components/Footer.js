@@ -1,5 +1,5 @@
 import React from "react";
-import "../styles/footer.css";
+import "../components/styles/footer.css";
 import logo from "../Image/suntwist.png";
 import TextField from "@mui/material/TextField";
 

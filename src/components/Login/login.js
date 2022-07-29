@@ -93,7 +93,21 @@ export default class App extends React.Component {
               )}
             </div>
             <div className="password m-3">
+              {/* <TextField
+                id="outlined-basic"
+                label="Password"
+                variant="outlined"
+                name="password"
+                size="small"
+                className="ms-1 w-100"
+                onChange={this.handleChange}
+                noValidate
+              /> */}
               <TextField
+                ref="password"
+                hintText="Password"
+                floatingLabelText="Password"
+                type="password"
                 id="outlined-basic"
                 label="Password"
                 variant="outlined"
@@ -112,7 +126,7 @@ export default class App extends React.Component {
                 className="btn btn-outline-success w-100 ms-1"
                 style={{ backgroundColor: "#66A500", color: "white" }}
               >
-                Create
+               Log in
               </button>
             </div>
             <div className="">

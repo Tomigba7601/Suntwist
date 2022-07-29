@@ -1,42 +1,22 @@
-body {
-  background-color: lightgrey;
+/* .sec_1{
+  height:
+} */
+#testimony{
+  background-color:lightgrey;
+  width:102%;
+  /* height:400px; */
+  margin-bottom:60px;
 }
-.container {
-  overflow-x: auto;
-  white-space: nowrap;
+.category_1{
+  background-color:#F2F2F2;
 }
-
-.container::-webkit-scrollbar {
-  display: none;
+.category_2{
+  background-color:#FEF7CC;
+  /* height: 300px; */
 }
-.first-div,
-.second-div,
-.third-div {
-  width: 260px;
-  height: 100px;
-  border: none;
-  border-radius: 10px;
-  box-shadow: 0px 0px 10px lightgrey;
-  background-color: white;
-  text-align: center;
-  font-family: "Kurale", serif;
-  font-family: "Spline Sans Mono", monospace;
-  color:#66A500;
+.category_3{
+  background-color:#FBC6B8;
 }
-.whole-div {
-  display: flex;
-  justify-content: center;
-  margin-top:70px;
-}
-h3{
-    font-family: "Kurale", serif;
-    font-family: "Spline Sans Mono", monospace;
-    font-weight:900;
-    color:"#66A500"
-}
-@media only screen and (max-width: 600px) and (min-width: 0px) {
-  .whole-div {
-    display: block;
-    justify-content: none;
-  }
+.category_4{
+  background-color:#D3E8A7;
 }

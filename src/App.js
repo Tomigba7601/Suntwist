@@ -14,7 +14,7 @@ import Navbar from "./components/Navbar/navbar";
 import Login from "./components/Login/login";
 import Signup from "./components/Signup/signup";
 import Menucont from "./components/menucontainer/menucont";
-import Footer from "./components/Footer/footer";
+import Footer from "./components/Footer";
 import Carousel from "./components/Carousel/carousel";
 import Admin from "./Admin/Admin";
 import MoreDetails from "./Pages/MoreDetails";
@@ -29,7 +29,7 @@ function App() {
   const globalState = useSelector((state) => {
     return state.price;
   });
-  console.log(globalState);
+  // console.log(globalState);
   return (
     <>
       <Navbar />
